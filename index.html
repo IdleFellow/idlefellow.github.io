@@ -2,3 +2,18 @@
 <title>IdleFellow 's homepage</title>
 <h2>你好，这里是孙川的个人主页</h2>
 <p><a href="https://github.com/IdleFellow">这里</a>是我的github主页</p>
+
+<p>About Spark</p>
+If you want spark to log your job, you must set two values:
+For example:
+spark.eventLog.enabled=true
+spark.eventLog.dir=/tmp/spark-events
+this will storage the job info to spark.eventLog.dir as json data.
+
+If you want to see the job's info, you can:
+start-history-server.sh
+and see: http://localhost:18080/
+
+Principle: Spark have a template to every job, but the data is null by default,
+if you set spark.eventLog.enabled=true, Spark will filling the data and store it
+in spark.eventLog.dir, and historyserver will remember the dir.
