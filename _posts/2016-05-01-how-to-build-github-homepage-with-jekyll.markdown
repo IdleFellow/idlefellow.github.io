@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to build Github homepage with jekyll"
-date:   2016-05-15 20:10:10 +0800
+date:   2016-05-01 20:10:10 +0800
 categories: Spark
 ---
 1. Install `Ruby`.
@@ -43,7 +43,4 @@ git commit -m 'use jekyll'
 git push origin master
 {% endhighlight %}
 
-Visit my Github [Github home][github-home].
-
-[github-home]: https://github.com/IdleFellow
 

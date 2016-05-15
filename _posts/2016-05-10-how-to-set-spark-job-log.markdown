@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to set Spark job's log"
-date:   2016-05-15 20:10:10 +0800
+date:   2016-05-10 20:10:10 +0800
 categories: Spark
 ---
 1. If you want spark to log your job, you must set two values:
@@ -27,7 +27,4 @@ if you set spark.eventLog.enabled=true, Spark will filling the data and store it
 in spark.eventLog.dir, and historyserver will remember the dir.
 {% endhighlight %}
 
-Visit my Github [Github home][github-home].
-
-[github-home]: https://github.com/IdleFellow
 
