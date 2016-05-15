@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is IdleFellow's HomePage. It is mostly about Spark's installation, deployment and optimization.
+This is IdleFellow's Homepage. It is about Spark's everything.
 
 Note that: `if reproduced, please indicate the source.`
