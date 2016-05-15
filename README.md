@@ -1,4 +1,4 @@
 idlefellow.github.io
 ====================
 
-IdleFellow 's homepage
+IdleFellow 's Homepage
