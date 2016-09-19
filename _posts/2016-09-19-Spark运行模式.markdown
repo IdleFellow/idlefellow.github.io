@@ -1,7 +1,7 @@
 ﻿---
 layout: post
-title:  "Spark运行模式"
-date:   2016-09-19 20:10:10 +0800
+title: "Spark运行模式"
+date: 2016-09-19 20:10:10 +0800
 categories: Spark
 ---
 One. Yarn基础
@@ -33,5 +33,3 @@ Three. Spark运行机制
 
 http://master:8080: Application管理UI，使用了tomcat.如果在start-master.sh时有tomcat在运行，则内置的tomcat不会运行，所以需要首先关闭其他tomcat实例，然后start-master.sh
 {% endhighlight %}
-
-
