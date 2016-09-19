@@ -1,14 +1,19 @@
-﻿# Spark运行模式
-
-标签（空格分隔）： Spark 运行模式
-
+﻿---
+layout: post
+title:  "Spark运行模式"
+date:   2016-09-19 20:10:10 +0800
+categories: Spark
 ---
+One. Yarn基础
 
-**Yarn基础**
-资源管理层面：master为resourcemanager, slave为nodemanager
-应用管理层面：每个Application第一个container为master,后续container为slave.master被成为Application Master.
+{% highlight ruby %}
+--资源管理层面：master为resourcemanager, slave为nodemanager
+--应用管理层面：每个Application第一个container为master,后续container为slave.master被成为Application Master.
+{% endhighlight %}
 
-**Spark运行模式**
+Two. Spark运行模式
+
+{% highlight ruby %}
 1 local模式
 *--master local[2]*: 本地模式运行，2个线程，主要用于调试，不涉及作业提交和资源调用，单机方式执行程序. 不涉及HDFS 和 Yarn.主要测试Spark计算框架本身的逻辑。
 2 Standalone模式
@@ -17,14 +22,14 @@
 *--master yarn-cluster
 --master yarn-client*
 将作业提交给resourcemanager,由yarn管理作业的分配和运行
+{% endhighlight %}
 
-**Spark运行机**制
+Three. Spark运行机制
+
+{% highlight ruby %}
 --存储层：可以使用本地文件，也可以运行HDFS等分布式文件系统
 --资源管理层和应用管理层：支持Yarn，mesos，也有自己的standalone（集群模式），和调试模式local[]
 --计算框架层：Spark的逻辑
 
 *http://master:8080*: Application管理UI，使用了tomcat.如果在start-master.sh时有tomcat在运行，则内置的tomcat不会运行，所以需要首先关闭其他tomcat实例，然后start-master.sh
-
-
-
-
+{% endhighlight %}
