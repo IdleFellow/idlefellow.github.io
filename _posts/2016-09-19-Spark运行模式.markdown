@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Spark运行模式"
+title: "Spark"
 date: 2016-09-19 20:10:10 +0800
 categories: Spark
 ---
